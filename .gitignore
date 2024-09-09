@@ -1,36 +1,48 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+#Caches
+.yarn
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-.yarn/install-state.gz
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
+# Node.js
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
-.env*.local
+# Diretórios de build e artefatos
+.next/
+out/
+dist/
+.cache/
 
-# vercel
-.vercel
+# Arquivos de configuração do ambiente
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# Logs
+logs/
+*.log
+
+# Jest
+coverage/
+*.lcov
+
+# Docker
+Dockerfile
+docker-compose.yml
+docker-compose.override.yml
+.dockerignore
+docker-compose.override.yml
+
+# Mac OS
+.DS_Store
+
+# Editor de código
+.idea/
+.vscode/
+*.sublime-workspace
+
+# Arquivos de lock
+package-lock.json
+yarn.lock
